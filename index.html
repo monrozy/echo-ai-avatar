@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Echo — Your AI Language Companion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">✦</span><span>ECHO<span class="brand-light">.AI</span></span></div>
+      <div class="status"><span class="status-dot"></span> ONLINE · READY TO TALK</div>
+    </header>
+
+    <section class="hero">
+      <div class="intro">
+        <p class="eyebrow">YOUR PERSONAL LANGUAGE COMPANION</p>
+        <h1>Meet <span>Echo.</span></h1>
+        <p class="subtitle">A curious, friendly virtual human who helps you practise English through natural conversation.</p>
+        <div class="traits"><span>Curious</span><span>Patient</span><span>Encouraging</span></div>
+      </div>
+
+      <div class="avatar-stage">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="spark spark-a">✦</div><div class="spark spark-b">✧</div>
+        <div class="avatar" id="avatar">
+          <div class="hair-back"></div>
+          <div class="neck"></div>
+          <div class="body"><div class="shirt-line"></div></div>
+          <div class="head">
+            <div class="hair-top"></div>
+            <div class="ear ear-left"></div><div class="ear ear-right"></div>
+            <div class="brow brow-left"></div><div class="brow brow-right"></div>
+            <div class="eye eye-left"><i></i></div><div class="eye eye-right"><i></i></div>
+            <div class="nose"></div>
+            <div class="cheek cheek-left"></div><div class="cheek cheek-right"></div>
+            <div class="mouth" id="mouth"><span></span></div>
+          </div>
+        </div>
+        <div class="avatar-caption"><span class="live-pulse"></span><span id="mood">Happy to meet you!</span></div>
+      </div>
+    </section>
+
+    <section class="conversation">
+      <div class="conversation-heading"><div><p class="eyebrow">LIVE CONVERSATION</p><h2>Talk with Echo</h2></div><button id="clearBtn" class="clear-btn">Clear chat ↗</button></div>
+      <div class="chat-window" id="chatWindow" aria-live="polite">
+        <div class="message echo-message"><div class="mini-avatar">E</div><div class="bubble"><strong>Echo</strong><p>Hey there! 👋 I'm Echo. Tell me about your day, or choose a topic and let's practise English together.</p></div></div>
+      </div>
+      <div class="quick-prompts">
+        <button class="prompt">☕ Daily life</button><button class="prompt">✈️ Travel</button><button class="prompt">💼 Job interview</button><button class="prompt">🎯 Correct my English</button>
+      </div>
+      <form id="chatForm" class="composer">
+        <input id="userInput" autocomplete="off" placeholder="Write a message to Echo..." aria-label="Message to Echo" />
+        <button type="button" id="voiceBtn" class="voice-btn" title="Speak to Echo">🎙</button>
+        <button type="submit" class="send-btn">Send <span>➤</span></button>
+      </form>
+      <div class="bottom-note">Tip: use the microphone to speak, or turn on voice replies to hear Echo.</div>
+      <label class="voice-toggle"><input type="checkbox" id="voiceReplies" checked /> <span class="toggle-ui"></span> Voice replies</label>
+    </section>
+    <footer>BUILT WITH HTML · CSS · JAVASCRIPT <span>— ECHO, YOUR EVERYDAY LANGUAGE PARTNER</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
